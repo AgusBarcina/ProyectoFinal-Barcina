@@ -1,0 +1,63 @@
+.HomePage {
+  width: 100%;
+}
+
+/* Sección principal con fondo impactante y efectos modernos */
+.firstSection {
+  width: 100%;
+  height: 90vh; /* ocupa casi toda la altura de la vista */
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* degradado vibrante */
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centra vertical y horizontalmente */
+  color: white;
+  font-family: 'Montserrat', sans-serif; /* tipografía moderna */
+  padding: 20px;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.3); /* efecto de sombra interna para profundidad */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Añadir un efecto de overlay para suavizar el fondo y mejorar la legibilidad */
+.firstSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2); /* overlay semi-transparente */
+  z-index: 1;
+}
+
+/* Contenido dentro de la sección, por ejemplo, textos o botones */
+.firstSection > * {
+  position: relative; /* para que esté por encima del overlay */
+  z-index: 2;
+  text-align: center;
+}
+
+/* Estilo para `.box2` con un diseño moderno y atractivo */
+.box2 {
+  grid-area: box2; /* si estás usando grid en algún contenedor padre */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* fondo semitransparente */
+  border-radius: 15px; /* bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  backdrop-filter: blur(5px); /* efecto de desenfoque en el fondo */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Añadir efecto hover para `.box2` */
+.box2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,42 @@
+.Header {
+    width: 100%;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #da5407,#f84104); /* fondo degradado suave */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* más espacio entre los elementos */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra sutil */
+    font-family: 'Arial Rounded MT Bold', cursive; /* tipografía moderna y amigable */
+    transition: background 0.3s ease;
+  }
+  
+  /* Estilo para la imagen del header */
+  .Header img {
+    height: 70px; /* un poco más grande para impactar */
+    border-radius: 50%; /* círculo si la imagen es cuadrada */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efecto en la imagen al pasar el ratón */
+  .Header img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Estilo para el span (puedes personalizar más) */
+  .Header span {
+    width: 35%; /* ajusta según necesites */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* color del texto */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    text-align: center;
+    font-family: 'Pacifico', cursive; /* fuente decorativa si quieres */
+  }
+  
+  /* Opcional: agregar un efecto de hover al span */
+  .Header span:hover {
+    color: #f76c6c;
+    cursor: pointer;
+  }
